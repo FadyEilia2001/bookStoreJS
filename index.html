@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/fav/icons8-books-color-96.png"
+      type="image/x-icon"
+    />
+    <script src="script.js" defer></script>
+    <title>My Book Library</title>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <header>
+        <h1 class="app-title">
+          <span class="material-symbols-outlined title-icon"> menu_book </span
+          >My Book Library
+        </h1>
+        <p class="app-desc">
+          This project is part of my journey through
+          <a href="" target="_blank" rel="noopener">The Odin Project</a>. Right
+          now, I’m learning how to work with JavaScript constructors, objects,
+          and the DOM, and this Library app is my way of putting those skills
+          into practice. You can follow along or check out the source code on
+          <a href="/" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+      </header>
+
+      <!-- Main Start -->
+      <main>
+        <form action="">
+          <div class="book-title-input-container">
+            <label for="book-title">Book</label>
+            <input type="text" name="book-title" id="book-title" required />
+          </div>
+
+          <div class="book-author-input-container">
+            <label for="book-author">Author</label>
+            <input type="text" name="book-author" id="book-author" required />
+          </div>
+
+          <div class="book-status-input-container">
+            <label for="book-status">Status</label>
+            <select name="book-status" id="book-status">
+              <option value="Not Read">Not read</option>
+              <option value="Read">Read</option>
+            </select>
+          </div>
+
+          <button class="add-book-btn" type="button">Add Book</button>
+        </form>
+
+        <button type="button" class="first-book-btn hidden">
+          <span class="material-symbols-outlined add-icon"> add_ad </span>
+          Add Your First Book
+        </button>
+
+        <div class="table-container">
+          <table class="table-hidden">
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Author</td>
+                <td>Status</td>
+                <td>Delete</td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </main>
+
+      <!-- Footer Start -->
+      <footer></footer>
+    </div>
+  </body>
+</html>
